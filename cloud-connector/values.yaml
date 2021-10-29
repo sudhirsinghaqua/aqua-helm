@@ -12,7 +12,7 @@ serviceaccount:
 
 image:
   repository: aqua-cloud-connector
-  tag: "6.5"
+  tag: "6.2"
   pullPolicy: Always
 
 replicaCount: 1
