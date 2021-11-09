@@ -8,3 +8,7 @@ home: https://www.aquasec.com/
 maintainers:
 - name: Aqua Security, Inc.
   email: support@aquasec.com
+dependencies:
+- name: gateway
+  version: "6.5.1"
+  repository: "https://github.com/aquasecurity/aqua-helm/blob/6.5/gateway"
