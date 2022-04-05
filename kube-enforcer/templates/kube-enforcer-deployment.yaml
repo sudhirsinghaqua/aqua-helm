@@ -49,6 +49,10 @@ spec:
               secretKeyRef:
                 name: {{ .Values.aquaSecret.name }}
                 key: token
+          - name: POD_NAME
+            valueFrom:
+              fieldRef:
+                fieldPath: metadata.name                
           {{- include "extraEnvironmentVars" .Values | nindent 10 }}
           {{- include "extraSecretEnvironmentVars" .Values | nindent 10 }}
           ports:
